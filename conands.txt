@@ -8,3 +8,5 @@ docker-compose build
 docker images
 
 docker images | grep node
+
+docker-compose up
