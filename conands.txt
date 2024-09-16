@@ -4,3 +4,7 @@ docker help
 docker-compose --version
 
 docker-compose build
+
+docker images
+
+docker images | grep node
