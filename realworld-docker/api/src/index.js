@@ -14,7 +14,7 @@ app.get('/test', (req, res) => {
 });
 
 const startServer = () => {
-    app.listen(port, () => {
+    app.listen(port, async () => {
         console.log(`Started api service on port ${port}`);
         console.log(`Our host is ${host}`);
         console.log(`Database url ${db}`);
@@ -22,7 +22,6 @@ const startServer = () => {
         const silence = new Kitten({ name: 'Silence' });
         silence.save();
         console.log(silence);
-        
     });
 };
 

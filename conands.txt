@@ -15,3 +15,7 @@ docker-compose up --build
 docker-compose down --volumes --remove-orphans
 
 docker logs realworld-docker_api_db_1
+
+docker volume
+
+clear && docker-compose down --volumes --remove-orphans && docker-compose -f docker-compose.yml -f docker-compose.development.yml up --build
