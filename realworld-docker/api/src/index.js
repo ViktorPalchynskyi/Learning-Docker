@@ -25,6 +25,13 @@ app.get('/textwithcurrentuser', async (req, res) => {
     });
 });
 
+app.get('/api/testapidata', (req, res) => {
+    res.json({
+        testwithapi: true,
+        number: Math.round(Math.random() * 10000000),
+    });
+});
+
 const startServer = () => {
     app.listen(port, async () => {
         console.log(`Started api service on port ${port}`);

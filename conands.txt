@@ -25,3 +25,5 @@ docker ps
 docker exec -it realworld-docker-api sh
 
 sudo nano /etc/hosts
+
+docker network
