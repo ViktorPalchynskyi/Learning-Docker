@@ -23,3 +23,5 @@ clear && docker-compose down --volumes --remove-orphans && docker-compose -f doc
 docker ps
 
 docker exec -it realworld-docker-api sh
+
+sudo nano /etc/hosts
