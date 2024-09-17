@@ -13,3 +13,5 @@ docker-compose up
 
 docker-compose up --build
 docker-compose down --volumes --remove-orphans
+
+docker logs realworld-docker_api_db_1
