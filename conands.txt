@@ -21,3 +21,5 @@ docker volume
 clear && docker-compose down --volumes --remove-orphans && docker-compose -f docker-compose.yml -f docker-compose.development.yml up --build
 
 docker ps
+
+docker exec -it realworld-docker-api sh
