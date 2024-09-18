@@ -62,3 +62,5 @@ docker stop keen_grothendieck
 docker kill 6991cf300af9
 
 docker exec -it 4a8e69c58767 bash
+
+docker run -d --name my_nginx nginx
