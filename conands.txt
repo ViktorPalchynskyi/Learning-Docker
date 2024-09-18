@@ -35,3 +35,10 @@ docker-compose up -d
 docker system
 
 docker run hello-world
+
+docker rm 6779baac3622
+
+docker run -it (i - interactive, t - terminal)
+
+hostname 
+hostname -i
