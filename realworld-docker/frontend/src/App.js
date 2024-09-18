@@ -7,6 +7,12 @@ const makeApiRequest = () => {
     );
 };
 
+const makeMailRequest = () => {
+    axios('/mail/api/testconnectionwithapiservice').then((response) =>
+        console.log(response)
+    );
+};
+
 function App() {
     return (
         <div className="App">
@@ -14,6 +20,7 @@ function App() {
                 <h1>Hello there asdf</h1>
             </header>
             <button onClick={makeApiRequest}>Make api request</button>
+            <button onClick={makeMailRequest}>Make mail request</button>
         </div>
     );
 }
