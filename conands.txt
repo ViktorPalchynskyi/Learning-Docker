@@ -20,10 +20,18 @@ docker volume
 
 clear && docker-compose down --volumes --remove-orphans && docker-compose -f docker-compose.yml -f docker-compose.development.yml up --build
 
-docker ps
-
+docker ps -a
+ 
 docker exec -it realworld-docker-api sh
 
 sudo nano /etc/hosts
 
 docker network
+
+docker images | grep realworld
+
+docker-compose up -d
+
+docker system
+
+docker run hello-world
