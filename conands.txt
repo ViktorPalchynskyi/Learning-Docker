@@ -42,3 +42,9 @@ docker run -it (i - interactive, t - terminal)
 
 hostname 
 hostname -i
+
+ping 8.8.8.8
+
+ls -la
+
+docker container prune
