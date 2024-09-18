@@ -66,3 +66,5 @@ docker exec -it 4a8e69c58767 bash
 docker run -d --name my_nginx nginx
 
 docker run -d -p 8080:80 nginx
+
+docker stop 3ddcec3b7681 84a64ce27aaf
