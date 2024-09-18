@@ -60,3 +60,5 @@ docker stop keen_grothendieck
 
 // kill process inside container
 docker kill 6991cf300af9
+
+docker exec -it 4a8e69c58767 bash
