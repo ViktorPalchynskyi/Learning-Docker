@@ -48,3 +48,9 @@ ping 8.8.8.8
 ls -la
 
 docker container prune
+
+docker run -d nginx (d - detached)
+
+docker container inspect ca1662dee60a
+
+docker container inspect ca1662dee60a | grep IPAddress
