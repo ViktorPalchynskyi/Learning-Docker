@@ -11,8 +11,7 @@ function App() {
     return (
         <div className="App">
             <header className="App-header">
-                <h1>Hello there</h1>
-                <p>We are in dev mode</p>
+                <h1>Hello there asdf</h1>
             </header>
             <button onClick={makeApiRequest}>Make api request</button>
         </div>
