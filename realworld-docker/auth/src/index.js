@@ -9,20 +9,34 @@ app.get('/test', (req, res) => {
     res.send('Our auth server is working correctly');
 });
 
-app.get('/api/currentUser', (req, res) => {
+app.get('/currentUser', (req, res) => {
     res.json({
         id: '123',
         email: 'test@test.com',
     });
+    ``;
 });
 
 app.get('/testwithapidata', async (req, res) => {
-    const { data: test } = await axios.get(`${apiUrl}/testapidata`);
+    try {
+        console.log('API',`${apiUrl}/testapidata`);
+        
+        const { data: test } = await axios.get(
+            `${apiUrl}/testapidata`
+        );
 
-    res.json({
-        testapidata: test.testwithapi,
-        num: test.number,
-    });
+        res.json({
+            testapidata: test.testwithapi,
+            num: test.number,
+        });
+    } catch (error) {
+        console.log('Error', error);
+
+        res.json({
+            error: true,
+            message: error.message,
+        });
+    }
 });
 
 const startServer = () => {

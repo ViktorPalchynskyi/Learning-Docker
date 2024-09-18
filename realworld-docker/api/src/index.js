@@ -14,7 +14,14 @@ app.get('/test', (req, res) => {
     res.send('Our api server is working correctly');
 });
 
-app.get('/textwithcurrentuser', async (req, res) => {
+app.get('/posts', (req, res) => {
+    res.send('New posts');
+});
+
+app.get('/testwithcurrentuser', async (req, res) => {
+    console.log(`${authApiUrl}/currentUser`);
+    
+
     const { data: user } = await axios.get(
         `${authApiUrl}/currentUser`
     );
@@ -25,7 +32,7 @@ app.get('/textwithcurrentuser', async (req, res) => {
     });
 });
 
-app.get('/api/testapidata', (req, res) => {
+app.get('/testapidata', (req, res) => {
     res.json({
         testwithapi: true,
         number: Math.round(Math.random() * 10000000),
