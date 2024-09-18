@@ -54,3 +54,9 @@ docker run -d nginx (d - detached)
 docker container inspect ca1662dee60a
 
 docker container inspect ca1662dee60a | grep IPAddress
+
+// stop container
+docker stop keen_grothendieck
+
+// kill process inside container
+docker kill 6991cf300af9
