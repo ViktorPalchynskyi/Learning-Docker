@@ -76,3 +76,5 @@ docker run -it --rm busybox
 docker run -v ${PWD}:/usr/share/nginx/html -p 8080:80 -d --name my_volume  nginx 
 
 docker build . -t my-calendar
+
+docker build . -t my-calendar:2.0.0
