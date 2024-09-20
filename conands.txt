@@ -83,3 +83,5 @@ docker build . -t my-calendar:2.0.0
 docker run -d -e MY_ENV_VAR=test ngninx
 
 printenv
+
+docker build -t viktorpalchynskyi/time-app-frontend-dev .
