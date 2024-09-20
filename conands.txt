@@ -85,3 +85,5 @@ docker run -d -e MY_ENV_VAR=test ngninx
 printenv
 
 docker build -t viktorpalchynskyi/time-app-frontend-dev .
+
+docker push viktorpalchynskyi/time-app-api-dev
